@@ -7,10 +7,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/actgardner/gogen-avro/v7/compiler"
-	"github.com/actgardner/gogen-avro/v7/parser"
-	"github.com/actgardner/gogen-avro/v7/resolver"
-	"github.com/actgardner/gogen-avro/v7/vm"
+	"github.com/rogpeppe/gogen-avro/v7/compiler"
+	"github.com/rogpeppe/gogen-avro/v7/parser"
+	"github.com/rogpeppe/gogen-avro/v7/resolver"
+	"github.com/rogpeppe/gogen-avro/v7/vm"
 
 	"github.com/linkedin/goavro/v2"
 	"github.com/stretchr/testify/assert"

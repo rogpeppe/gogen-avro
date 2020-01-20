@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/actgardner/gogen-avro/v7/container"
+	"github.com/rogpeppe/gogen-avro/v7/container"
 	"github.com/linkedin/goavro/v2"
 	"github.com/stretchr/testify/assert"
 )

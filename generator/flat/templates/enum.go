@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/actgardner/gogen-avro/v7/vm"
+	"github.com/rogpeppe/gogen-avro/v7/vm"
 )
 
 {{ if ne .Doc "" }}

@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/actgardner/gogen-avro/v7/compiler"
-	evolution "github.com/actgardner/gogen-avro/v7/test/default-union/evolution"
-	"github.com/actgardner/gogen-avro/v7/vm"
+	"github.com/rogpeppe/gogen-avro/v7/compiler"
+	evolution "github.com/rogpeppe/gogen-avro/v7/test/default-union/evolution"
+	"github.com/rogpeppe/gogen-avro/v7/vm"
 
 	"github.com/stretchr/testify/assert"
 )

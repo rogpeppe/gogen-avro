@@ -3,7 +3,7 @@ package templates
 const FixedTemplate = `
 import (
 	"io"
-	"github.com/actgardner/gogen-avro/v7/vm/types"
+	"github.com/rogpeppe/gogen-avro/v7/vm/types"
 )
 
 func {{ .SerializerMethod }}(r {{ .GoType }}, w io.Writer) error {

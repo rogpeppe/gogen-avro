@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"testing"
 
-	_ "github.com/actgardner/gogen-avro/v7/compiler"
-	_ "github.com/actgardner/gogen-avro/v7/vm"
+	_ "github.com/rogpeppe/gogen-avro/v7/compiler"
+	_ "github.com/rogpeppe/gogen-avro/v7/vm"
 	"github.com/linkedin/goavro/v2"
 	"github.com/stretchr/testify/assert"
 )

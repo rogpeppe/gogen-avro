@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/actgardner/gogen-avro/v7/container"
-	"github.com/actgardner/gogen-avro/v7/example/avro"
+	"github.com/rogpeppe/gogen-avro/v7/container"
+	"github.com/rogpeppe/gogen-avro/v7/example/avro"
 )
 
 func main() {

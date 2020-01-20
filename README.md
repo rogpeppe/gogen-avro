@@ -3,7 +3,7 @@
 
 [![Build Status](https://travis-ci.org/actgardner/gogen-avro.svg?branch=master)](https://travis-ci.org/actgardner/gogen-avro)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/actgardner/gogen-avro/master/LICENSE)
-[![Version 6.2.0](https://img.shields.io/badge/version-6.2.0-lightgrey.svg)](https://github.com/actgardner/gogen-avro/releases)
+[![Version 6.2.0](https://img.shields.io/badge/version-6.2.0-lightgrey.svg)](https://github.com/rogpeppe/gogen-avro/releases)
 
 Generates type-safe Go code based on your Avro schemas, including serializers and deserializers that support Avro's schema evolution rules.
 
@@ -33,7 +33,7 @@ change to any directory that is both outside of your GOPATH and outside of a mod
 then run:
 
 ```
-go get github.com/actgardner/gogen-avro/v7/cmd/gogen-avro@latest
+go get github.com/rogpeppe/gogen-avro/v7/cmd/gogen-avro@latest
 ```
 
 We recommend pinning a specific SHA of the gogen-avro tool when you compile your schemas with a tool like [retool](https://github.com/twitchtv/retool). This will ensure your builds are repeatable.
@@ -48,7 +48,7 @@ To generate Go source files from one or more Avro schema files, run:
 gogen-avro [--package=<package name>] <output directory> <avro schema files>
 ```
 
-You can also use a `go:generate` directive in a source file ([example](https://github.com/actgardner/gogen-avro/blob/master/test/primitive/generate.go#L3)):
+You can also use a `go:generate` directive in a source file ([example](https://github.com/rogpeppe/gogen-avro/blob/master/test/primitive/generate.go#L3)):
 
 ```
 //go:generate $GOPATH/bin/gogen-avro . primitives.avsc
@@ -78,9 +78,9 @@ Read Avro data from the given `io.Reader` and deserialize it into the generated 
 
 ### Working with Object Container Files (OCF)
 
-An example of how to write a container file can be found in [example/container/example.go](https://github.com/actgardner/gogen-avro/blob/master/example/container/example.go).
+An example of how to write a container file can be found in [example/container/example.go](https://github.com/rogpeppe/gogen-avro/blob/master/example/container/example.go).
 
-[Godocs for the container package](https://godoc.org/github.com/actgardner/gogen-avro/container)
+[Godocs for the container package](https://godoc.org/github.com/rogpeppe/gogen-avro/container)
 
 ### Example
 
@@ -88,11 +88,11 @@ The `example` directory contains simple example projects with an Avro schema. On
 
 ```
 # Build the Go source files from the Avro schema using the generate directive
-go generate github.com/actgardner/gogen-avro/v7/example
+go generate github.com/rogpeppe/gogen-avro/v7/example
 
 # Install the example projects on the GOPATH
-go install github.com/actgardner/gogen-avro/v7/example/record
-go install github.com/actgardner/gogen-avro/v7/example/container
+go install github.com/rogpeppe/gogen-avro/v7/example/record
+go install github.com/rogpeppe/gogen-avro/v7/example/container
 ```
 
 ### Naming
@@ -149,7 +149,7 @@ const (
 
 Until version 6.0 this project used gopkg.in for versioning of both the code generation tool and library. Older versions are still available on gopkg.in.
 
-Releases from 6.0 onward use semver tags (ex. `v6.0.0`) which are compatible with dep and modules. See [Releases](https://github.com/actgardner/gogen-avro/releases).
+Releases from 6.0 onward use semver tags (ex. `v6.0.0`) which are compatible with dep and modules. See [Releases](https://github.com/rogpeppe/gogen-avro/releases).
 
 ### Reporting Issues
 
@@ -157,7 +157,7 @@ When reporting issues, please include your reader and writer schemas, and the ou
 
 ```
 import (
-	"github.com/actgardner/gogen-avro/v7/compiler"
+	"github.com/rogpeppe/gogen-avro/v7/compiler"
 )
 
 func init() {

@@ -2,10 +2,10 @@
 package compiler
 
 import (
-	"github.com/actgardner/gogen-avro/v7/parser"
-	"github.com/actgardner/gogen-avro/v7/resolver"
-	"github.com/actgardner/gogen-avro/v7/schema"
-	"github.com/actgardner/gogen-avro/v7/vm"
+	"github.com/rogpeppe/gogen-avro/v7/parser"
+	"github.com/rogpeppe/gogen-avro/v7/resolver"
+	"github.com/rogpeppe/gogen-avro/v7/schema"
+	"github.com/rogpeppe/gogen-avro/v7/vm"
 )
 
 // Given two Avro schemas, compile them into a program which can read the data

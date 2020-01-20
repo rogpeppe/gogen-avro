@@ -1,4 +1,4 @@
-module github.com/actgardner/gogen-avro/v7
+module github.com/rogpeppe/gogen-avro/v7
 
 go 1.14
 

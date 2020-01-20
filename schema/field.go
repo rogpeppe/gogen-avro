@@ -2,7 +2,7 @@
 package schema
 
 import (
-	"github.com/actgardner/gogen-avro/v7/generator"
+	"github.com/rogpeppe/gogen-avro/v7/generator"
 )
 
 type Field struct {

@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/actgardner/gogen-avro/v7/vm/types"
+	"github.com/rogpeppe/gogen-avro/v7/vm/types"
 	"github.com/linkedin/goavro/v2"
 	"github.com/stretchr/testify/assert"
 )
