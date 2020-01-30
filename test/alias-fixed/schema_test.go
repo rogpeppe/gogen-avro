@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"testing"
 
+	"github.com/linkedin/goavro/v2"
 	_ "github.com/rogpeppe/gogen-avro/v7/compiler"
 	_ "github.com/rogpeppe/gogen-avro/v7/vm"
-	"github.com/linkedin/goavro/v2"
 	"github.com/stretchr/testify/assert"
 )
 
